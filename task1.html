@@ -8,7 +8,7 @@
     <script>
         var framework=document.getElementById("framework");
         framework.style.height=framework.offsetWidth+"px";
-    </script><!--我想用javascript让framework的宽高相等，<li>就可以根据父元素计算宽高，就可以设置百分比，然而并没有什么卵用，请问师兄哪里出错了？-->
+    </script><!--按照设想，body的高设为100%，div参照父元素body设宽为50%，成功，用javascript让div的宽赋值给高，失败，请问师兄哪里出错了？-->
     <style>
         *{
             margin:0;
@@ -40,7 +40,7 @@
             list-style:none;
             border-radius: 10px;
         }
-    </style><!--这里我想把<li>的高设置为27%的，可是设置之后浏览器打开是空白，只有framework的框框,为啥？-->
+    </style>
 </head>
 <body>
 <div id="framework">
