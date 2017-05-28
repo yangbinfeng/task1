@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <title>task1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script>
-        var framework=document.getElementById("framework");
-        framework.style.height=framework.offsetWidth+"px";
-    </script><!--按照设想，body的高设为100%，div参照父元素body设宽为50%，成功，用javascript让div的宽赋值给高，失败，请问师兄哪里出错了？-->
     <style>
         *{
             margin:0;
@@ -25,7 +20,6 @@
         }
         #framework{
             width:50%;
-            border:1px solid black;
         }
         ul{
             width:100%;
@@ -38,9 +32,17 @@
             background-color:rgb(255,166,0);
             float:left;
             list-style:none;
-            border-radius: 10px;
+            border-radius: 10%;
         }
     </style>
+    <script>
+        function changeheight() {
+            var framework = document.getElementById("framework");
+            framework.style.height = framework.offsetWidth + "px";
+        }
+        window.onload=changeheight;
+        window.onresize=changeheight;
+    </script>
 </head>
 <body>
 <div id="framework">
