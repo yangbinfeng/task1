@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    width:100vw;
+    height:100vw;
+}
+body{
+    display:flex;
+    justify-content:center;
+}
+.framework{
+    width:96vw;
+    margin-top: 2vw;
+}
+li{
+    margin: 2vw;
+    width: 28vw;
+    height: 28vw;
+    background-color:rgb(255,166,0);
+    float:left;
+    list-style:none;
+    border-radius: 2vw;
+}

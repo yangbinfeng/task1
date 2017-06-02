@@ -4,48 +4,10 @@
     <meta charset="UTF-8">
     <title>task1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        *{
-            margin:0;
-            padding:0;
-        }
-        html,body{
-            width:100%;
-            height:100%;
-        }
-        body{
-            display:flex;
-            align-items:center;
-            justify-content:center;
-        }
-        #framework{
-            width:50%;
-        }
-        ul{
-            width:100%;
-            height:100%;
-        }
-        li{
-            margin:3%;
-            width:27%;
-            height:27%;
-            background-color:rgb(255,166,0);
-            float:left;
-            list-style:none;
-            border-radius: 10%;
-        }
-    </style>
-    <script>
-        function changeheight() {
-            var framework = document.getElementById("framework");
-            framework.style.height = framework.offsetWidth + "px";
-        }
-        window.onload=changeheight;
-        window.onresize=changeheight;
-    </script>
+    <link rel="stylesheet" href="task1.css" type="text/css"/>
 </head>
 <body>
-<div id="framework">
+<div class="framework">
     <ul>
         <li></li>
         <li></li>
